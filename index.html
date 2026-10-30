@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tarun Yadav | Full-Stack Developer & Technology Founder</title>
+<meta name="description" content="Full-stack developer, real-time systems, AI/ML and startup founder.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090d18;--surface:#101626;--line:#1f2a44;--text:#e9edf6;--mute:#93a0ba;--a:#f0b35a;--b:#6cc4e0;color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#090d18;--surface:#101626;--line:#1f2a44;--text:#e9edf6;--mute:#93a0ba}}
+:root[data-theme="dark"]{--bg:#090d18;--surface:#101626;--line:#1f2a44;--text:#e9edf6;--mute:#93a0ba}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.65 "Newsreader",Georgia,serif}
+h1,h2,h3,.sans{font-family:"Sora",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--b);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:10;background:rgba(9,13,24,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:54px}
+nav b{font:700 15px "Sora",sans-serif}
+nav div{display:flex;gap:20px;font:400 14px "Sora",sans-serif;color:var(--mute)}
+nav a{text-decoration:none}nav a:hover{color:var(--text)}
+.hero{padding:84px 0 70px;display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(34px,5.6vw,60px);line-height:1.08;margin:0 0 22px;letter-spacing:-.02em;font-weight:700}
+.hero h1 span{display:block;color:var(--mute)}
+.hero p{color:var(--mute);max-width:56ch;margin:0 0 14px}
+.name{font:600 15px "Sora",sans-serif;color:var(--a);margin:0 0 14px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 20px}
+.btn{font:600 14px "Sora",sans-serif;padding:11px 18px;border-radius:6px;text-decoration:none;border:1px solid var(--line)}
+.btn.p{background:var(--a);color:#1a1205;border-color:var(--a)}
+.btn:hover{border-color:var(--b)}
+.links{display:flex;flex-wrap:wrap;gap:6px 20px;font:400 13px "Sora",sans-serif;color:var(--mute)}
+.links a{text-decoration:none;border-bottom:1px solid var(--line)}
+.links a:hover{color:var(--text);border-color:var(--b)}
+svg.orb{width:100%;height:auto;max-width:340px;justify-self:center}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 26px;letter-spacing:-.01em}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.two p{margin:0 0 14px;color:#c9d2e4}
+.tl{border-left:1px solid var(--line);margin-left:4px}
+.item{position:relative;padding:0 0 30px 26px}
+.item:before{content:"";position:absolute;left:-5px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--a)}
+.item h3{margin:0;font-size:18px}
+.item .role{font:400 14px "Sora",sans-serif;color:var(--b);margin:2px 0 6px}
+.item p{margin:0;color:#c9d2e4}
+.item a.ext{color:var(--b);text-decoration:none;font:400 14px "Sora",sans-serif}
+.free{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:8px;font:400 14px "Sora",sans-serif}
+.free a,.free span{color:var(--b);text-decoration:none}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0 0 12px;color:#c9d2e4;font-size:16px}
+.tags{font:400 12.5px "Sora",sans-serif;color:var(--mute);margin-bottom:12px}
+.st{font:400 13.5px "Sora",sans-serif;display:flex;gap:16px;flex-wrap:wrap}
+.st a{color:var(--b);text-decoration:none}
+.st em{font-style:normal;color:var(--mute)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px 30px}
+.skills h3{font-size:14px;margin:0 0 8px;color:var(--a)}
+.skills p{margin:0;color:#c9d2e4;font-size:16px}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.contact a{display:block;padding:12px 0;border-bottom:1px solid var(--line);text-decoration:none;font:400 15px "Sora",sans-serif}
+.contact a span{display:inline-block;min-width:120px;color:var(--mute)}
+.contact a:hover{color:var(--b)}
+footer{padding:30px 0 40px;color:var(--mute);font:400 13px "Sora",sans-serif;border-top:1px solid var(--line)}
+@media(max-width:760px){.hero,.two{grid-template-columns:1fr}.hero{padding-top:48px}svg.orb{max-width:220px}nav div{gap:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.spin{animation:none!important}}
+.spin{transform-origin:170px 170px;animation:r 60s linear infinite}
+@keyframes r{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Tarun Yadav</b><div><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></div></nav>
+<main class="wrap">
+<header class="hero" id="top">
+<div>
+<p class="name">Tarun Yadav</p>
+<h1>Building Software.<span>Exploring Intelligence.</span><span>Engineering What’s Next.</span></h1>
+<p>Full-Stack Developer | Real-Time Systems | AI/ML | Startup Founder | Robotics &amp; Engineering Enthusiast.</p>
+<p>I’m a full-stack developer and technology founder who enjoys building practical software products, collaborative systems, and engineering-oriented applications. My interests extend into AI, machine learning, robotics, electronics, automation, cybersecurity, and space technology.</p>
+<div class="btns"><a class="btn p" href="#projects">View Projects</a><a class="btn" href="mailto:ty49189@gmail.com?subject=Resume%20request">Download Resume</a><a class="btn" href="#contact">Contact Me</a></div>
+<div class="links"><a href="https://github.com/Tarun03-pluto">GitHub: Tarun03-pluto</a><a href="https://github.com/ty49189-byte">GitHub: ty49189-byte</a><a href="https://github.com/eloncreates369">GitHub: eloncreates369</a><a href="https://www.linkedin.com/in/tarun-yadav-37094337b">LinkedIn: tarun-yadav-37094337b</a><a href="mailto:ty49189@gmail.com">ty49189@gmail.com</a></div>
+</div>
+<svg class="orb" viewBox="0 0 340 340" role="img" aria-label="Abstract orbital diagram">
+<g fill="none" stroke="#1f2a44" stroke-width="1"><circle cx="170" cy="170" r="150"/><circle cx="170" cy="170" r="105"/><circle cx="170" cy="170" r="60"/><path d="M20 170h300M170 20v300"/></g>
+<ellipse cx="170" cy="170" rx="150" ry="52" fill="none" stroke="#6cc4e0" stroke-opacity=".55" transform="rotate(-24 170 170)"/>
+<circle cx="170" cy="170" r="9" fill="#f0b35a"/>
+<g class="spin"><circle cx="170" cy="65" r="5" fill="#6cc4e0"/><circle cx="275" cy="170" r="3.5" fill="#e9edf6"/><circle cx="62" cy="230" r="4" fill="#f0b35a"/></g>
+</svg>
+</header>
+
+<section id="about"><h2>About</h2>
+<div class="two">
+<div>
+<p>I’ve been coding since sixth grade. Over the years that curiosity grew into full-stack web development, backend and API design, and building real-time, collaborative applications.</p>
+<p>I build products as well as code: I’ve started and run technology ventures, and I like taking an idea through to something people actually use.</p>
+</div>
+<div>
+<p>Beyond web software I’m drawn to AI and machine learning, robotics, electronics, automation and electrical engineering, plus cybersecurity and Linux. I’m also fascinated by rocket science, astrophysics and space technology.</p>
+<p>I’m looking to contribute to practical, interdisciplinary engineering projects where software meets the physical world.</p>
+</div></div></section>
+
+<section id="experience"><h2>Experience &amp; Leadership</h2>
+<div class="tl">
+<div class="item"><h3>EDURACK</h3><div class="role">Founder &amp; CEO</div><p>Education technology startup. I built the entire platform myself. <a class="ext" href="https://edurack.in/">edurack.in</a></p></div>
+<div class="item"><h3>Quantum Veda</h3><div class="role">CTO &amp; Chief Advisory Officer</div><p>I manage all technical operations, including the websites, and serve as chief advisor. <a class="ext" href="https://thequantumveda.in/">thequantumveda.in</a></p></div>
+<div class="item"><h3>Freelance Web Development</h3><div class="role">Freelancer &amp; Web Developer</div><p>Built websites for education brands.</p>
+<div class="free"><a href="https://careerwill.in/">Careerwill</a><a href="https://adda247.com/">Adda247</a><span>NFAT Prep India</span></div></div>
+<div class="item"><h3>Hackathons</h3><div class="role">12+ events in my first year</div><p>Participated in events including those hosted at IIT Indore, IIT Kharagpur, Jadavpur University, DAVV and IIM Indore.</p></div>
+</div></section>
+
+<section id="projects"><h2>Projects</h2>
+<div class="proj">
+<div class="card"><h3>Synapse</h3><p>Real-time WebRTC communication platform with peer-to-peer video and audio calls.</p><div class="tags">WebRTC, React, Node.js, Socket.io, Express</div><div class="st"><em>Not deployed yet</em><a href="https://github.com/ty49189-byte/synapse">Source</a></div></div>
+<div class="card"><h3>Prodify</h3><p>Productivity and habit tracking application.</p><div class="tags">React, MongoDB, Express, Node.js, TypeScript</div><div class="st"><a href="https://prodify-roan.vercel.app">Live</a></div></div>
+<div class="card"><h3>CodeSync</h3><p>Live coding collaboration platform with real-time editing and execution.</p><div class="tags">Socket.io, React, Node.js, Monaco Editor, Docker</div><div class="st"><em>Not deployed yet</em><a href="https://github.com/ty49189-byte/code-sync">Source</a></div></div>
+<div class="card"><h3>Unbekannt</h3><p>Anonymous opinion sharing platform.</p><div class="tags">Next.js, MongoDB, TypeScript, Tailwind CSS</div><div class="st"><em>Not deployed yet</em></div></div>
+<div class="card"><h3>Cantilever</h3><p>A platform that helps civil engineers measure shear force and bending moment.</p><div class="tags">Next.js, MongoDB, TypeScript, Tailwind CSS</div><div class="st"><a href="https://cantilever-six.vercel.app">Live</a><a href="https://github.com/eloncreates369/cantilever">Source</a></div></div>
+</div></section>
+
+<section id="skills"><h2>Technical Skills</h2>
+<div class="skills">
+<div><h3>Languages</h3><p>Python, Java, C, C++, JavaScript, TypeScript, R</p></div>
+<div><h3>Web</h3><p>HTML, CSS, Tailwind CSS</p></div>
+<div><h3>Frontend</h3><p>React.js, Next.js</p></div>
+<div><h3>Backend &amp; APIs</h3><p>Node.js, Express.js, FastAPI, Django, REST APIs, Pydantic</p></div>
+<div><h3>Databases</h3><p>MongoDB, PostgreSQL, SQL, SQLite, Firebase, Supabase</p></div>
+<div><h3>Real-Time &amp; Tools</h3><p>WebRTC, Socket.io, Redis, Docker, Vercel, Render</p></div>
+</div></section>
+
+<section id="education"><h2>Education</h2>
+<div class="edu">
+<div class="card"><h3>Class 12</h3><p>DVI Rukmani Higher Secondary School, Khargone</p><div class="tags">91.6%</div></div>
+<div class="card"><h3>Class 10</h3><p>DVI Rukmani Higher Secondary School, Khargone</p><div class="tags">93.4%</div></div>
+</div></section>
+
+<section id="contact" class="contact"><h2>Contact</h2>
+<a href="mailto:ty49189@gmail.com"><span>Email</span>ty49189@gmail.com</a>
+<a href="https://www.linkedin.com/in/tarun-yadav-37094337b"><span>LinkedIn</span>tarun-yadav-37094337b</a>
+<a href="https://github.com/Tarun03-pluto"><span>GitHub</span>Tarun03-pluto</a>
+<a href="https://github.com/ty49189-byte"><span>GitHub</span>ty49189-byte</a>
+<a href="https://github.com/eloncreates369"><span>GitHub</span>eloncreates369</a>
+</section>
+</main>
+<footer><div class="wrap">© 2026 Tarun Yadav</div></footer>
+</body>
+</html>
